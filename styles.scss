@@ -16,3 +16,22 @@ body {
   background-attachment: fixed;
   font-family: "Dancing script", sans-serif;
 }
+.page-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgb(236, 58, 9);
+  border-radius: 10px;
+  padding: 6rem;
+  color: #c4b7b7;
+  font-size: 4rem;
+  background-color: chocolate;
+}
+h2 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
