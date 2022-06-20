@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inspiration&family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+}
+body {
+  background-color: #f2f2f2;
+  background-image: url("images/imgtimer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Dancing script", sans-serif;
+}
