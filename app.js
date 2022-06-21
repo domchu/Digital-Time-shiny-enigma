@@ -8,7 +8,8 @@ setInterval(() => {
   let day = date.getDay();
   let currentDay;
   let am_pm;
-  let month = date.getMonth() + 1;
+  let month = date.getMonth();
+  let year = date.getFullYear();
 
   if (hours < 10) {
     hours = "0" + hours;
@@ -100,4 +101,5 @@ setInterval(() => {
   clock.innerHTML = `${hours}:${minutes}:${seconds} ${am_pm}`;
   document.querySelector(".day").innerHTML = currentDay;
   document.querySelector(".month").innerHTML = `${month}`;
+  document.querySelector(".year").innerHTML = `${year}`;
 }, 1000);
