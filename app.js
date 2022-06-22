@@ -26,10 +26,10 @@ setInterval(() => {
   }
   if (hours >= 12) {
     am_pm = "PM";
-  }
-  if (hours < 12) {
+  } else {
     am_pm = "AM";
   }
+  // am_pm = hours > 12 ? "PM" : "AM"
   switch (date.getDay()) {
     case 0:
       currentDay = "Sunday";
