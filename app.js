@@ -7,9 +7,18 @@ setInterval(() => {
   let seconds = date.getSeconds();
   let day = date.getDay();
   let currentDay;
-  let am_pm = "AM";
+  let am_pm;
   let month = date.getMonth();
   let year = date.getFullYear();
+
+  // if (hours < 12) {
+  //   am_pm = "AM";
+  // }
+  // if (hours > 12) {
+  //   am_pm = "PM";
+  // }
+  // added the one line
+  am_pm = hours >= 12 ? "PM" : "AM";
 
   if (hours < 10) {
     hours = "0" + hours;
@@ -24,10 +33,7 @@ setInterval(() => {
   if (hours > 12) {
     hours = hours - 12;
   }
-  if (hours > 12) {
-    am_pm = "PM";
-  }
-  // am_pm = hours > 12 ? "PM" : "AM"
+
   switch (date.getDay()) {
     case 0:
       currentDay = "Sunday";
