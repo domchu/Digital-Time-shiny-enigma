@@ -7,7 +7,7 @@ setInterval(() => {
   let seconds = date.getSeconds();
   let day = date.getDay();
   let currentDay;
-  let am_pm;
+  let am_pm = "AM";
   let month = date.getMonth();
   let year = date.getFullYear();
 
@@ -24,10 +24,8 @@ setInterval(() => {
   if (hours > 12) {
     hours = hours - 12;
   }
-  if (hours >= 12) {
+  if (hours > 12) {
     am_pm = "PM";
-  } else {
-    am_pm = "AM";
   }
   // am_pm = hours > 12 ? "PM" : "AM"
   switch (date.getDay()) {
